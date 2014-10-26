@@ -68,8 +68,16 @@ div#wholewapper {
 	width            : 40%;
     border-style: solid;
     border-color     : #999999; 
-
-
+}
+div#pro {
+	background-color : #FFFFFF;
+	font-size        : 95%;
+	margin-left      : 25%;
+    margin-right     : 25%;
+	padding          : 10px 0;
+	width            : 50%;
+    border-style: solid;
+    border-color     : #999999; 
 }
 
 div#wholewapper a.edit {

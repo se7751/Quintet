@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2014-10-23 10:09:22
+<?php /* Smarty version Smarty-3.0.8, created on 2014-10-26 05:02:15
          compiled from "view/viewProjects.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:194875448b7b2e44131-84787171%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:22976544c7247a22b32-96844928%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '96558c747a0c501af7dab9cb0e04ce88759d1545' => 
     array (
       0 => 'view/viewProjects.tpl',
-      1 => 1414051363,
+      1 => 1414296107,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '194875448b7b2e44131-84787171',
+  'nocache_hash' => '22976544c7247a22b32-96844928',
   'function' => 
   array (
   ),
@@ -48,7 +48,7 @@ $_smarty_tpl->decodeProperties(array (
 	</head>
 	<body>
 		<!-- コンテンツ -->
-		<div id="wholewapper">
+		<div id="pro">
 			<p id="right_align">
 			<?php if (($_smarty_tpl->getVariable('role_flag')->value=="2")){?>
 				<a href="createProject.php">新規プロジェクト</a>

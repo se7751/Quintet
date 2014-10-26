@@ -145,7 +145,7 @@
 	</tr>
 		<tr>
 			<td colspan="7" class="right_align">
-                <button onclick="myFunc();" id="selectest" >送信ボタン</button>
+                <button onclick="myFunc();" id="selectest" >作成</button>
 			</td>
 		</tr>
 	</table>

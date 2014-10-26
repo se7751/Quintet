@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2014-10-23 17:27:32
+<?php /* Smarty version Smarty-3.0.8, created on 2014-10-26 04:59:43
          compiled from "view/editProject.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:891954491e642f0176-73034678%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:22009544c71af01b203-97657772%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '1b92d9504082756b9361ad323798b31862437f32' => 
     array (
       0 => 'view/editProject.tpl',
-      1 => 1414078049,
+      1 => 1414295980,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '891954491e642f0176-73034678',
+  'nocache_hash' => '22009544c71af01b203-97657772',
   'function' => 
   array (
   ),
@@ -199,7 +199,7 @@ if ($_smarty_tpl->_count($_from) > 0){
     </tr>
         <tr>
             <td colspan="7" class="right_align">
-                <button onclick="myFunc();" id="selectest" >送信ボタン</button>
+                <button onclick="myFunc();" id="selectest" >編集</button>
             </td>
         </tr>
     </table>

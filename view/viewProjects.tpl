@@ -26,7 +26,7 @@
 	</head>
 	<body>
 		<!-- コンテンツ -->
-		<div id="wholewapper">
+		<div id="pro">
 			<p id="right_align">
 			{if ($role_flag == "2")}
 				<a href="createProject.php">新規プロジェクト</a>
