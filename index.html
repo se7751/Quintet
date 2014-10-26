@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="css/login.css" type="text/css" />
+		<link rel="stylesheet" href="css/view.css" type="text/css" />
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.preventPasswordTypo.js"></script>
+        <script>
+            jQuery(function() {
+                $("#password").preventPasswordTypo(17);
+                $("#change").preventPasswordTypoOn("#password");
+            });
+        </script>
+        <style type="text/css">
+
+.off { visibility: hidden; }
+.on { visibility: hidden; }
+</style>
+
+		<title>ログイン</title>
+		<!-- フッダ -->
+        <div id="header">
+        <h1>　　　　</h1>
+
+        <div id="tab">
+        <ul>
+        <li class="off" id="protab" ><a href="board.php">プロジェクト</a></li>
+        <li class="off" id="tickettab"><a href="viewTickets.php?project_id={$ch_project_id}">チケット</a></li>
+        <li class="on" id="newtickettab"><a href="createTicket.php?project_id={$ch_project_id}">チケット作成</a></li>
+        <li class="off" id="searchtab"><a href="viewSearch.php">検索</a></li>
+        </ul>
+        </div>
+        </div>
+	</head>
+	<body>
+		<div id="login">
+            <form action="login.php" method="post">
+                <table>
+                    <tr>
+                        <td colspan="2"><img src="images/quintet-256.png" alt="やるきの出る画像"></td>
+                    </tr>
+
+                    <tr>
+                        <th>ユーザ名</th>
+                        <td><input type="text" name="user_id" value="" /></td>
+                    </tr>
+                    <tr>
+                        <th>パスワード</th>
+                        <td><input type="password" id="password" name="password" value="" /></td>
+                    </tr>
+
+                    <tr>
+                        <th>パスワード表示</th>
+                        <td class="center_align">
+                            <input type="checkbox" id="change" name="change" value=""/>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td colspan="2" class="right_align">
+                            <input type="submit" id="test" name="login_submit" value="ログイン" />
+                        </td>
+
+                    </tr>
+                </table>
+            </form>
+        </div>
+	</body>
+	<!-- フッダ -->
+		<div id="footer">
+			&copy; Quintet
+		</div>
+</html>

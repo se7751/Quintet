@@ -1,0 +1,83 @@
+
+a{
+	text-decoration   : none;
+	color             : #8945de
+}
+
+.tiketo:nth-child(even){
+	background        : #f0fff0;
+}
+
+.tiketo:nth-child(odd){
+	background        : #ffffff
+}
+
+.list_issues{
+    margin-left       : auto;
+    width             : 80%;
+}
+table{
+	background-color  : #fffafa;
+    width             : 40%; 
+    margin-left       : 30%;
+    margin-right      : 30%;
+    border-style      : solid;
+    border-color      : #bbbbbb;
+    border-top-color  : #FFFFFF;
+}
+#nyuryoku{
+    background-color  : #FFFFFF;
+	font-size         : 95%;
+	margin-left       : 30%;
+    margin-right      : 30%;
+	padding           : 10px 0;
+	width             : 40%;
+    border-style      : solid;
+    border-color      : #bbbbbb;
+    border-bottom-color: #FFFFFF;
+    text-align        : left;
+    }
+#usertable{
+    background-color  : #FFFFFF;
+	font-size         : 95%;
+	margin-left       : 30%;
+    margin-right      : 30%;
+	padding           : 10px 0;
+	width             : 40%;
+    border-style      : solid;
+    border-color      : #999999;
+    border-top-color  : #FFFFFF;
+    }
+h2{
+    font-size        : 30px;
+	margin-left      : 30%;
+}
+
+
+h5{
+	background       : #f5f5f5;
+}
+
+#roadmap{
+	background       : #B2E7FF;
+    margin-left      : 20%;
+    margin-right     : 20%;
+    width            :60%;
+    
+	}
+
+.tiketo_speedy:nth-child(odd){
+	background       : #2e0101;
+}
+.autoscroll{
+    margin-left      : 20%;
+    margin-right     : 10%;
+    width            :75%;
+}
+table{
+    background       : #ffffff;
+    text-align       : center;
+}
+.pagination{
+margin-left          : 60%;
+}

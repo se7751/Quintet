@@ -1,0 +1,36 @@
+
+.right_align {
+	text-align       : right;
+}
+
+.left_align{
+	text-align       : left;
+}
+
+.center_align {
+	text-align       : center;
+}
+
+#login {
+    width            : 60%;
+	margin-left      :40%;
+}
+
+table {
+	width:20%;
+	border-collapse  : collapse;
+	border-left      : 1px solid #B2D281;
+	border-top       : 1px solid #B2D281;
+}
+table td {
+	border-bottom    : 1px solid #B2D281;
+	border-right     : 1px solid #B2D281;
+	padding          : 5px;
+}
+table th {
+	background-color : #1B5790;
+	border-bottom    : 1px solid #B2D281;
+	border-right     : 1px solid #B2D281;
+	color            : #FFFFFF;
+	padding          : 5px;
+}
