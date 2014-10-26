@@ -84,7 +84,7 @@
 					<tr>
 						<th>プロジェクト名　</th>
 						<td>
-							<input type="text" name="title" id="title" value="" />
+							<input type="text" name="title"  size="35" id="title" value="" />
 						</td>
 					</tr>
 					<tr>

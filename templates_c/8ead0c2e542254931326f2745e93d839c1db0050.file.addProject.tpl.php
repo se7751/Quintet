@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2014-10-26 04:52:45
+<?php /* Smarty version Smarty-3.0.8, created on 2014-10-26 06:18:19
          compiled from "view/addProject.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:20190544c700d425ff9-13925370%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:23478544c841b2e9911-25774802%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '8ead0c2e542254931326f2745e93d839c1db0050' => 
     array (
       0 => 'view/addProject.tpl',
-      1 => 1414295546,
+      1 => 1414300619,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '20190544c700d425ff9-13925370',
+  'nocache_hash' => '23478544c841b2e9911-25774802',
   'function' => 
   array (
   ),
@@ -106,7 +106,7 @@ $_smarty_tpl->decodeProperties(array (
 					<tr>
 						<th>プロジェクト名　</th>
 						<td>
-							<input type="text" name="title" id="title" value="" />
+							<input type="text" name="title"  size="35" id="title" value="" />
 						</td>
 					</tr>
 					<tr>

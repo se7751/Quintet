@@ -79,7 +79,7 @@
                     <tr>
                         <th>プロジェクト名　</th>
                         <td>
-                            <input type="text" name="title" id="title" value="{$project_title}" />
+                            <input type="text" name="title" size="35" id="title" value="{$project_title}" />
                         </td>
                     </tr>
                     <tr>

@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2014-10-26 04:40:48
+<?php /* Smarty version Smarty-3.0.8, created on 2014-10-26 06:31:40
          compiled from "view/viewSearch.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:29350544a880a992bb5-97114542%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:29604544c873ce89855-38954093%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '7195179481a38cf62573f5dafa98a69e048ee4b7' => 
     array (
       0 => 'view/viewSearch.tpl',
-      1 => 1414290549,
+      1 => 1414301290,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '29350544a880a992bb5-97114542',
+  'nocache_hash' => '29604544c873ce89855-38954093',
   'function' => 
   array (
   ),
@@ -53,7 +53,6 @@ $_smarty_tpl->decodeProperties(array (
         <!-- ヘッダ -->
     </head>
     <body>
-    <div id="wholewappers">
         <div id="serch" class="font">
             <form action="viewSearch.php" id="newProject" method="post">
             <td>検索ワード</th><td><input type="textbox" value="" name="word"></td>
@@ -70,7 +69,7 @@ $_smarty_tpl->decodeProperties(array (
 		<div id="rest">
             <table border="1" id="restable">
             <tr>
-            <th>プロジェクト名</th><th>チケット名</th><th>概要</th>
+            <th class="project">プロジェクト名</th><th class="ticket">チケット名</th><th class="gaiyo">概要</th>
             </tr>
                 <?php  $_smarty_tpl->tpl_vars['res'] = new Smarty_Variable;
  $_from = $_smarty_tpl->getVariable('results')->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
@@ -79,12 +78,12 @@ if ($_smarty_tpl->_count($_from) > 0){
 ?>
 						<?php if (($_smarty_tpl->tpl_vars['res']->value['ticket_id']!='')){?>
             <tr>
-            <th><a href="#"><?php echo $_smarty_tpl->tpl_vars['res']->value['project_title'];?>
+            <th class="project"><a href="#"><?php echo $_smarty_tpl->tpl_vars['res']->value['project_title'];?>
 </a><!--ここにプロジェクト・チケットを表示--></th>
-            <th><a href="viewTicket.php?ticket_id=<?php echo $_smarty_tpl->tpl_vars['res']->value['ticket_id'];?>
+            <th class="ticket"><a href="viewTicket.php?ticket_id=<?php echo $_smarty_tpl->tpl_vars['res']->value['ticket_id'];?>
 "><?php echo $_smarty_tpl->tpl_vars['res']->value['title'];?>
 </a></th>
-            <th><?php echo $_smarty_tpl->tpl_vars['res']->value['body'];?>
+            <th class="gaiyo"><?php echo $_smarty_tpl->tpl_vars['res']->value['body'];?>
 </th>
             </tr>
                 <?php }?>
@@ -92,7 +91,6 @@ if ($_smarty_tpl->_count($_from) > 0){
             </table>
            </div>
 
-    </div>
 
     <!-- フッダ -->
     <div id="footer">

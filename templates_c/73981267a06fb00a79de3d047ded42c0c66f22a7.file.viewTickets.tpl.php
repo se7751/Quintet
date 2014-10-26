@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2014-10-26 03:30:18
+<?php /* Smarty version Smarty-3.0.8, created on 2014-10-26 06:40:20
          compiled from "view/viewTickets.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:20127544c56b2a37cb0-57493931%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:21477544c8944749449-68142696%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '73981267a06fb00a79de3d047ded42c0c66f22a7' => 
     array (
       0 => 'view/viewTickets.tpl',
-      1 => 1414290549,
+      1 => 1414302015,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '20127544c56b2a37cb0-57493931',
+  'nocache_hash' => '21477544c8944749449-68142696',
   'function' => 
   array (
   ),
@@ -94,7 +94,7 @@ if ($_smarty_tpl->_count($_from) > 0){
 ?>
 		<?php if (($_smarty_tpl->tpl_vars['ticket']->value['ticket_id']!='')){?>
 		<?php if (($_smarty_tpl->tpl_vars['ticket']->value['priority']=="至急")){?>
-		<tr style="background: red;">
+		<tr style="background: #FFE200;">
 		<?php }else{ ?>
 		<tr id="issue-100"  class="tiketo">
 		<?php }?>

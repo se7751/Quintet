@@ -24,6 +24,7 @@ table{
     border-style      : solid;
     border-color      : #bbbbbb;
     border-top-color  : #FFFFFF;
+    text-align: center;
 }
 #nyuryoku{
     background-color  : #FFFFFF;
@@ -74,10 +75,25 @@ h5{
     margin-right     : 10%;
     width            :75%;
 }
-table{
-    background       : #ffffff;
-    text-align       : center;
+table#restable{
+	background-color  : #fffafa;
+    width             : 70%; 
+    margin-left       : 15%;
+    margin-right      : 15%;
+    border-style      : solid;
+    border-color      : #bbbbbb;
+    border-top-color  : #FFFFFF;
 }
 .pagination{
 margin-left          : 60%;
+}
+
+.project{
+    width            :30%;
+}
+.ticket{
+    width            :20%;
+}
+.gaiyo{
+    width            :30%;
 }

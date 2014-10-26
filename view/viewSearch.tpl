@@ -29,7 +29,6 @@
         <!-- ヘッダ -->
     </head>
     <body>
-    <div id="wholewappers">
         <div id="serch" class="font">
             <form action="viewSearch.php" id="newProject" method="post">
             <td>検索ワード</th><td><input type="textbox" value="" name="word"></td>
@@ -45,21 +44,20 @@
 		<div id="rest">
             <table border="1" id="restable">
             <tr>
-            <th>プロジェクト名</th><th>チケット名</th><th>概要</th>
+            <th class="project">プロジェクト名</th><th class="ticket">チケット名</th><th class="gaiyo">概要</th>
             </tr>
                 {foreach from=$results item=res}
 						{if ($res.ticket_id != "")}
             <tr>
-            <th><a href="#">{$res.project_title}</a><!--ここにプロジェクト・チケットを表示--></th>
-            <th><a href="viewTicket.php?ticket_id={$res.ticket_id}">{$res.title}</a></th>
-            <th>{$res.body}</th>
+            <th class="project"><a href="#">{$res.project_title}</a><!--ここにプロジェクト・チケットを表示--></th>
+            <th class="ticket"><a href="viewTicket.php?ticket_id={$res.ticket_id}">{$res.title}</a></th>
+            <th class="gaiyo">{$res.body}</th>
             </tr>
                 {/if}
                 {/foreach}
             </table>
            </div>
 
-    </div>
 
     <!-- フッダ -->
     <div id="footer">

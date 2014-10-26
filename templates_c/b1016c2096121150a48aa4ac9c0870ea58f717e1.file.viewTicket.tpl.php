@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2014-10-26 03:30:24
+<?php /* Smarty version Smarty-3.0.8, created on 2014-10-26 05:45:56
          compiled from "view/viewTicket.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:7148544c56b56b4393-87030048%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:20894544c7c841b96d1-83128571%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'b1016c2096121150a48aa4ac9c0870ea58f717e1' => 
     array (
       0 => 'view/viewTicket.tpl',
-      1 => 1414290549,
+      1 => 1414298752,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '7148544c56b56b4393-87030048',
+  'nocache_hash' => '20894544c7c841b96d1-83128571',
   'function' => 
   array (
   ),
@@ -132,8 +132,8 @@ if ($_smarty_tpl->_count($_from) > 0){
     foreach ($_from as $_smarty_tpl->tpl_vars['com']->key => $_smarty_tpl->tpl_vars['com']->value){
 ?>
 						<?php if (($_smarty_tpl->tpl_vars['com']->value['comennt_id']!='')){?>
-						<h4>投稿者:<a href="#" class="user active"><?php echo $_smarty_tpl->tpl_vars['com']->value['name'];?>
-</a></h4>
+						<h4>投稿者:<?php echo $_smarty_tpl->tpl_vars['com']->value['name'];?>
+</h4>
 						<p><?php echo $_smarty_tpl->tpl_vars['com']->value['comment'];?>
 </p><h5>投稿日時：<?php echo $_smarty_tpl->tpl_vars['com']->value['created'];?>
 </h5>

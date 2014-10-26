@@ -83,7 +83,7 @@
 					<div id="sc">
 						{foreach from=$comments item=com}
 						{if ($com.comennt_id != "")}
-						<h4>投稿者:<a href="#" class="user active">{$com.name}</a></h4>
+						<h4>投稿者:{$com.name}</h4>
 						<p>{$com.comment}</p><h5>投稿日時：{$com.created}</h5>
 						<a href="view/{$com.file_name}" class="user active">{$com.file_name}</a>
 					{if ($com.file_name != "")}

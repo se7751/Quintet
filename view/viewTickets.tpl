@@ -54,7 +54,7 @@
 		{foreach from=$tickets item=ticket}
 		{if ($ticket.ticket_id != "")}
 		{if ($ticket.priority == "至急")}
-		<tr style="background: red;">
+		<tr style="background: #FFE200;">
 		{else}
 		<tr id="issue-100"  class="tiketo">
 		{/if}
