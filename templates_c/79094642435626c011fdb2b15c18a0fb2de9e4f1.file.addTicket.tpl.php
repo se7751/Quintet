@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2014-10-26 03:58:24
+<?php /* Smarty version Smarty-3.0.8, created on 2014-10-26 06:57:30
          compiled from "view/addTicket.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:21803544ba6e83eef80-85677388%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:3655544c8d4ab7a005-52027496%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '79094642435626c011fdb2b15c18a0fb2de9e4f1' => 
     array (
       0 => 'view/addTicket.tpl',
-      1 => 1414290549,
+      1 => 1414303009,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '21803544ba6e83eef80-85677388',
+  'nocache_hash' => '3655544c8d4ab7a005-52027496',
   'function' => 
   array (
   ),
@@ -206,7 +206,7 @@ if ($_smarty_tpl->_count($_from) > 0){
 	</tr>
 		<tr>
 			<td colspan="7" class="right_align">
-				<button onclick="myFunc();" id="selectest" >送信ボタン</button>
+				<button onclick="myFunc();" id="selectest" >作成</button>
 			</td>
 		</tr>
 	</table>

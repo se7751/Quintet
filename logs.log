@@ -49045,3 +49045,1949 @@ WHERE
 		tickets
 	where
 		tickets.project_id = '3' order by ticket_id asc LIMIT 0 , 10
+[14/10/26 06:49:36 DBManager.php (49)] QUERY EXEC:
+	SELECT
+           user_id
+		, password
+		, name
+		, role_flag
+	FROM
+		users
+	WHERE
+		user_id = 'tiba'
+[14/10/26 06:49:36 login.php (42)] login successful: tiba
+[14/10/26 06:49:37 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		project_id
+		, title
+		, body
+		, created
+	FROM
+		projects
+[14/10/26 06:49:37 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '1'
+[14/10/26 06:49:37 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '1'
+[14/10/26 06:49:37 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '1'and
+		tickets.state != '完了'
+[14/10/26 06:49:37 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '2'
+[14/10/26 06:49:37 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '2'
+[14/10/26 06:49:37 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '2'and
+		tickets.state != '完了'
+[14/10/26 06:49:37 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '3'
+[14/10/26 06:49:37 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '3'
+[14/10/26 06:49:37 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '3'and
+		tickets.state != '完了'
+[14/10/26 06:49:37 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '5'
+[14/10/26 06:49:37 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '5'
+[14/10/26 06:49:37 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '5'and
+		tickets.state != '完了'
+[14/10/26 06:49:37 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '6'
+[14/10/26 06:49:37 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '6'
+[14/10/26 06:49:37 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '6'and
+		tickets.state != '完了'
+[14/10/26 06:49:37 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '7'
+[14/10/26 06:49:37 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '7'
+[14/10/26 06:49:37 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '7'and
+		tickets.state != '完了'
+[14/10/26 06:49:41 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		user_id,
+		name
+	FROM
+		users
+	WHERE
+		users.role_flag = '2'
+[14/10/26 06:49:41 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		user_id,
+		name
+	FROM
+		users
+	WHERE
+		users.role_flag = '1'
+[14/10/26 06:49:41 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		user_id,
+		name
+	FROM
+		users
+	WHERE
+		users.role_flag = '0'
+[14/10/26 06:50:08 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		project_id
+		, title
+		, body
+		, created
+	FROM
+		projects
+[14/10/26 06:50:08 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '1'
+[14/10/26 06:50:08 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '1'
+[14/10/26 06:50:08 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '1'and
+		tickets.state != '完了'
+[14/10/26 06:50:08 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '2'
+[14/10/26 06:50:08 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '2'
+[14/10/26 06:50:08 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '2'and
+		tickets.state != '完了'
+[14/10/26 06:50:08 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '3'
+[14/10/26 06:50:08 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '3'
+[14/10/26 06:50:08 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '3'and
+		tickets.state != '完了'
+[14/10/26 06:50:08 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '5'
+[14/10/26 06:50:08 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '5'
+[14/10/26 06:50:08 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '5'and
+		tickets.state != '完了'
+[14/10/26 06:50:08 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '6'
+[14/10/26 06:50:08 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '6'
+[14/10/26 06:50:08 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '6'and
+		tickets.state != '完了'
+[14/10/26 06:50:08 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '7'
+[14/10/26 06:50:08 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '7'
+[14/10/26 06:50:08 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '7'and
+		tickets.state != '完了'
+[14/10/26 06:54:10 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		project_id
+		, title
+		, body
+		, created
+	FROM
+		projects
+[14/10/26 06:54:10 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '1'
+[14/10/26 06:54:10 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '1'
+[14/10/26 06:54:10 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '1'and
+		tickets.state != '完了'
+[14/10/26 06:54:10 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '2'
+[14/10/26 06:54:10 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '2'
+[14/10/26 06:54:10 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '2'and
+		tickets.state != '完了'
+[14/10/26 06:54:10 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '3'
+[14/10/26 06:54:10 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '3'
+[14/10/26 06:54:10 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '3'and
+		tickets.state != '完了'
+[14/10/26 06:54:10 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '5'
+[14/10/26 06:54:10 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '5'
+[14/10/26 06:54:10 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '5'and
+		tickets.state != '完了'
+[14/10/26 06:54:10 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '6'
+[14/10/26 06:54:10 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '6'
+[14/10/26 06:54:10 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '6'and
+		tickets.state != '完了'
+[14/10/26 06:54:10 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '7'
+[14/10/26 06:54:10 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '7'
+[14/10/26 06:54:10 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '7'and
+		tickets.state != '完了'
+[14/10/26 06:54:12 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		user_id,
+		name
+	FROM
+		users
+	WHERE
+		users.role_flag = '2'
+[14/10/26 06:54:12 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		user_id,
+		name
+	FROM
+		users
+	WHERE
+		users.role_flag = '1'
+[14/10/26 06:54:12 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		user_id,
+		name
+	FROM
+		users
+	WHERE
+		users.role_flag = '0'
+[14/10/26 06:54:19 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		project_id
+		, title
+		, body
+		, created
+	FROM
+		projects
+[14/10/26 06:54:19 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '1'
+[14/10/26 06:54:19 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '1'
+[14/10/26 06:54:19 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '1'and
+		tickets.state != '完了'
+[14/10/26 06:54:19 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '2'
+[14/10/26 06:54:19 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '2'
+[14/10/26 06:54:19 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '2'and
+		tickets.state != '完了'
+[14/10/26 06:54:19 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '3'
+[14/10/26 06:54:19 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '3'
+[14/10/26 06:54:19 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '3'and
+		tickets.state != '完了'
+[14/10/26 06:54:19 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '5'
+[14/10/26 06:54:19 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '5'
+[14/10/26 06:54:19 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '5'and
+		tickets.state != '完了'
+[14/10/26 06:54:19 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '6'
+[14/10/26 06:54:19 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '6'
+[14/10/26 06:54:19 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '6'and
+		tickets.state != '完了'
+[14/10/26 06:54:19 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '7'
+[14/10/26 06:54:19 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '7'
+[14/10/26 06:54:20 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '7'and
+		tickets.state != '完了'
+[14/10/26 06:54:23 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		title
+	FROM
+		projects
+	where
+		project_id = '1'
+[14/10/26 06:54:23 DBManager.php (49)] QUERY EXEC:
+		SELECT
+			count(*) as total
+		FROM
+			projects,tickets
+		WHERE
+			projects.project_id = tickets.project_id and
+			projects.project_id = '1'
+[14/10/26 06:54:23 DBManager.php (49)] QUERY EXEC:
+		SELECT
+			count(*) as untotal
+		FROM
+			projects,tickets
+		WHERE
+			projects.project_id = tickets.project_id and
+			projects.project_id = '1'and
+			tickets.state != '完了'
+[14/10/26 06:54:23 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		*
+	FROM
+		tickets
+	where
+		tickets.project_id = '1' order by ticket_id asc LIMIT 0 , 10
+[14/10/26 06:54:24 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		project_members.user_id,
+		name
+	FROM
+		users,project_members
+	WHERE
+		users.user_id = project_members.user_id and
+		users.role_flag = '2'and
+		project_id = '1'
+[14/10/26 06:54:24 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		project_members.user_id,
+		name
+	FROM
+		users,project_members
+	WHERE
+		users.user_id = project_members.user_id and
+		users.role_flag = '1'and
+		project_id = '1'
+[14/10/26 06:54:24 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		project_members.user_id,
+		name
+	FROM
+		users,project_members
+	WHERE
+		users.user_id = project_members.user_id and
+		users.role_flag = '0'and
+		project_id = '1'
+[14/10/26 06:55:13 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		project_members.user_id,
+		name
+	FROM
+		users,project_members
+	WHERE
+		users.user_id = project_members.user_id and
+		users.role_flag = '2'and
+		project_id = '1'
+[14/10/26 06:55:13 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		project_members.user_id,
+		name
+	FROM
+		users,project_members
+	WHERE
+		users.user_id = project_members.user_id and
+		users.role_flag = '1'and
+		project_id = '1'
+[14/10/26 06:55:13 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		project_members.user_id,
+		name
+	FROM
+		users,project_members
+	WHERE
+		users.user_id = project_members.user_id and
+		users.role_flag = '0'and
+		project_id = '1'
+[14/10/26 06:55:18 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		project_id
+		, title
+		, body
+		, created
+	FROM
+		projects
+[14/10/26 06:55:18 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '1'
+[14/10/26 06:55:18 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '1'
+[14/10/26 06:55:18 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '1'and
+		tickets.state != '完了'
+[14/10/26 06:55:18 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '2'
+[14/10/26 06:55:18 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '2'
+[14/10/26 06:55:18 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '2'and
+		tickets.state != '完了'
+[14/10/26 06:55:18 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '3'
+[14/10/26 06:55:18 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '3'
+[14/10/26 06:55:18 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '3'and
+		tickets.state != '完了'
+[14/10/26 06:55:18 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '5'
+[14/10/26 06:55:18 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '5'
+[14/10/26 06:55:18 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '5'and
+		tickets.state != '完了'
+[14/10/26 06:55:18 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '6'
+[14/10/26 06:55:18 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '6'
+[14/10/26 06:55:18 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '6'and
+		tickets.state != '完了'
+[14/10/26 06:55:18 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '7'
+[14/10/26 06:55:18 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '7'
+[14/10/26 06:55:18 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '7'and
+		tickets.state != '完了'
+[14/10/26 06:55:20 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		user_id,
+		name
+	FROM
+		users
+	WHERE
+		users.role_flag = '2'
+[14/10/26 06:55:20 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		user_id,
+		name
+	FROM
+		users
+	WHERE
+		users.role_flag = '1'
+[14/10/26 06:55:20 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		user_id,
+		name
+	FROM
+		users
+	WHERE
+		users.role_flag = '0'
+[14/10/26 06:55:33 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		project_id
+		, title
+		, body
+		, created
+	FROM
+		projects
+[14/10/26 06:55:33 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '1'
+[14/10/26 06:55:33 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '1'
+[14/10/26 06:55:33 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '1'and
+		tickets.state != '完了'
+[14/10/26 06:55:33 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '2'
+[14/10/26 06:55:33 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '2'
+[14/10/26 06:55:33 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '2'and
+		tickets.state != '完了'
+[14/10/26 06:55:33 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '3'
+[14/10/26 06:55:33 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '3'
+[14/10/26 06:55:33 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '3'and
+		tickets.state != '完了'
+[14/10/26 06:55:33 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '5'
+[14/10/26 06:55:33 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '5'
+[14/10/26 06:55:33 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '5'and
+		tickets.state != '完了'
+[14/10/26 06:55:33 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '6'
+[14/10/26 06:55:33 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '6'
+[14/10/26 06:55:33 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '6'and
+		tickets.state != '完了'
+[14/10/26 06:55:33 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '7'
+[14/10/26 06:55:33 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '7'
+[14/10/26 06:55:33 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '7'and
+		tickets.state != '完了'
+[14/10/26 06:57:10 DBManager.php (49)] QUERY EXEC:
+	SELECT
+           user_id
+		, password
+		, name
+		, role_flag
+	FROM
+		users
+	WHERE
+		user_id = 'tiba'
+[14/10/26 06:57:10 login.php (42)] login successful: tiba
+[14/10/26 06:57:11 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		project_id
+		, title
+		, body
+		, created
+	FROM
+		projects
+[14/10/26 06:57:11 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '1'
+[14/10/26 06:57:11 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '1'
+[14/10/26 06:57:11 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '1'and
+		tickets.state != '完了'
+[14/10/26 06:57:11 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '2'
+[14/10/26 06:57:11 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '2'
+[14/10/26 06:57:11 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '2'and
+		tickets.state != '完了'
+[14/10/26 06:57:11 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '3'
+[14/10/26 06:57:11 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '3'
+[14/10/26 06:57:11 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '3'and
+		tickets.state != '完了'
+[14/10/26 06:57:11 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '5'
+[14/10/26 06:57:11 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '5'
+[14/10/26 06:57:11 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '5'and
+		tickets.state != '完了'
+[14/10/26 06:57:11 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '6'
+[14/10/26 06:57:11 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '6'
+[14/10/26 06:57:11 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '6'and
+		tickets.state != '完了'
+[14/10/26 06:57:11 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '7'
+[14/10/26 06:57:11 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '7'
+[14/10/26 06:57:11 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '7'and
+		tickets.state != '完了'
+[14/10/26 06:57:13 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		user_id,
+		name
+	FROM
+		users
+	WHERE
+		users.role_flag = '2'
+[14/10/26 06:57:13 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		user_id,
+		name
+	FROM
+		users
+	WHERE
+		users.role_flag = '1'
+[14/10/26 06:57:13 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		user_id,
+		name
+	FROM
+		users
+	WHERE
+		users.role_flag = '0'
+[14/10/26 06:57:17 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		project_id
+		, title
+		, body
+		, created
+	FROM
+		projects
+[14/10/26 06:57:17 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '1'
+[14/10/26 06:57:17 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '1'
+[14/10/26 06:57:17 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '1'and
+		tickets.state != '完了'
+[14/10/26 06:57:17 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '2'
+[14/10/26 06:57:17 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '2'
+[14/10/26 06:57:17 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '2'and
+		tickets.state != '完了'
+[14/10/26 06:57:17 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '3'
+[14/10/26 06:57:17 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '3'
+[14/10/26 06:57:17 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '3'and
+		tickets.state != '完了'
+[14/10/26 06:57:17 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '5'
+[14/10/26 06:57:17 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '5'
+[14/10/26 06:57:17 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '5'and
+		tickets.state != '完了'
+[14/10/26 06:57:17 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '6'
+[14/10/26 06:57:17 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '6'
+[14/10/26 06:57:17 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '6'and
+		tickets.state != '完了'
+[14/10/26 06:57:17 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '7'
+[14/10/26 06:57:17 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '7'
+[14/10/26 06:57:17 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '7'and
+		tickets.state != '完了'
+[14/10/26 06:57:19 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		title,
+		body
+	FROM
+		projects
+	WHERE
+		project_id = '1'
+[14/10/26 06:57:19 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		users.user_id,
+		name
+	FROM
+		users,project_members
+	WHERE
+		users.user_id = project_members.user_id and
+		project_id = '1'
+[14/10/26 06:57:19 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		A.user_id,
+		name
+	FROM
+		users as A
+	where not exists(
+	SELECT
+		*
+	FROM
+		users as B,project_members
+	WHERE
+        A.user_id = B.user_id and
+		B.user_id = project_members.user_id and
+		project_members.project_id = '1' and
+		B.role_flag = '2') and A.role_flag = '2'
+[14/10/26 06:57:19 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		A.user_id,
+		name
+	FROM
+		users as A
+	where not exists(
+	SELECT
+		*
+	FROM
+		users as B,project_members
+	WHERE
+        A.user_id = B.user_id and
+		B.user_id = project_members.user_id and
+		project_id = '1' and
+		B.role_flag = '1') and A.role_flag = '1'
+[14/10/26 06:57:19 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		A.user_id,
+		name
+	FROM
+		users as A
+	where not exists(
+	SELECT
+		*
+	FROM
+		users as B,project_members
+	WHERE
+        A.user_id = B.user_id and
+		B.user_id = project_members.user_id and
+		project_id = '1' and
+		B.role_flag = '0') and A.role_flag = '0'
+[14/10/26 06:57:21 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		project_id
+		, title
+		, body
+		, created
+	FROM
+		projects
+[14/10/26 06:57:21 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '1'
+[14/10/26 06:57:21 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '1'
+[14/10/26 06:57:21 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '1'and
+		tickets.state != '完了'
+[14/10/26 06:57:21 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '2'
+[14/10/26 06:57:21 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '2'
+[14/10/26 06:57:21 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '2'and
+		tickets.state != '完了'
+[14/10/26 06:57:21 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '3'
+[14/10/26 06:57:21 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '3'
+[14/10/26 06:57:21 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '3'and
+		tickets.state != '完了'
+[14/10/26 06:57:21 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '5'
+[14/10/26 06:57:21 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '5'
+[14/10/26 06:57:21 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '5'and
+		tickets.state != '完了'
+[14/10/26 06:57:21 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '6'
+[14/10/26 06:57:21 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '6'
+[14/10/26 06:57:21 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '6'and
+		tickets.state != '完了'
+[14/10/26 06:57:21 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '7'
+[14/10/26 06:57:21 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '7'
+[14/10/26 06:57:21 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '7'and
+		tickets.state != '完了'
+[14/10/26 06:57:23 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		title
+	FROM
+		projects
+	where
+		project_id = '1'
+[14/10/26 06:57:23 DBManager.php (49)] QUERY EXEC:
+		SELECT
+			count(*) as total
+		FROM
+			projects,tickets
+		WHERE
+			projects.project_id = tickets.project_id and
+			projects.project_id = '1'
+[14/10/26 06:57:23 DBManager.php (49)] QUERY EXEC:
+		SELECT
+			count(*) as untotal
+		FROM
+			projects,tickets
+		WHERE
+			projects.project_id = tickets.project_id and
+			projects.project_id = '1'and
+			tickets.state != '完了'
+[14/10/26 06:57:23 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		*
+	FROM
+		tickets
+	where
+		tickets.project_id = '1' order by ticket_id asc LIMIT 0 , 10
+[14/10/26 06:57:27 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		project_id
+		, title
+		, body
+		, created
+	FROM
+		projects
+[14/10/26 06:57:27 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '1'
+[14/10/26 06:57:27 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '1'
+[14/10/26 06:57:27 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '1'and
+		tickets.state != '完了'
+[14/10/26 06:57:27 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '2'
+[14/10/26 06:57:27 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '2'
+[14/10/26 06:57:27 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '2'and
+		tickets.state != '完了'
+[14/10/26 06:57:27 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '3'
+[14/10/26 06:57:27 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '3'
+[14/10/26 06:57:27 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '3'and
+		tickets.state != '完了'
+[14/10/26 06:57:27 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '5'
+[14/10/26 06:57:27 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '5'
+[14/10/26 06:57:27 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '5'and
+		tickets.state != '完了'
+[14/10/26 06:57:27 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '6'
+[14/10/26 06:57:27 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '6'
+[14/10/26 06:57:27 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '6'and
+		tickets.state != '完了'
+[14/10/26 06:57:27 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		name
+	FROM
+		project_members,users
+	WHERE
+		project_members.user_id = users.user_id and
+		project_members.project_id = '7'
+[14/10/26 06:57:27 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as total
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '7'
+[14/10/26 06:57:27 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		count(*) as untotal
+	FROM
+		projects,tickets
+	WHERE
+		projects.project_id = tickets.project_id and
+		projects.project_id = '7'and
+		tickets.state != '完了'
+[14/10/26 06:57:29 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		title
+	FROM
+		projects
+	where
+		project_id = '1'
+[14/10/26 06:57:29 DBManager.php (49)] QUERY EXEC:
+		SELECT
+			count(*) as total
+		FROM
+			projects,tickets
+		WHERE
+			projects.project_id = tickets.project_id and
+			projects.project_id = '1'
+[14/10/26 06:57:29 DBManager.php (49)] QUERY EXEC:
+		SELECT
+			count(*) as untotal
+		FROM
+			projects,tickets
+		WHERE
+			projects.project_id = tickets.project_id and
+			projects.project_id = '1'and
+			tickets.state != '完了'
+[14/10/26 06:57:29 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		*
+	FROM
+		tickets
+	where
+		tickets.project_id = '1' order by ticket_id asc LIMIT 0 , 10
+[14/10/26 06:57:30 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		project_members.user_id,
+		name
+	FROM
+		users,project_members
+	WHERE
+		users.user_id = project_members.user_id and
+		users.role_flag = '2'and
+		project_id = '1'
+[14/10/26 06:57:30 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		project_members.user_id,
+		name
+	FROM
+		users,project_members
+	WHERE
+		users.user_id = project_members.user_id and
+		users.role_flag = '1'and
+		project_id = '1'
+[14/10/26 06:57:30 DBManager.php (49)] QUERY EXEC:
+	SELECT
+		project_members.user_id,
+		name
+	FROM
+		users,project_members
+	WHERE
+		users.user_id = project_members.user_id and
+		users.role_flag = '0'and
+		project_id = '1'
