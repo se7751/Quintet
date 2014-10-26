@@ -49,7 +49,7 @@
                 {foreach from=$results item=res}
 						{if ($res.ticket_id != "")}
             <tr>
-            <th class="project"><a href="#">{$res.project_title}</a><!--ここにプロジェクト・チケットを表示--></th>
+            <th class="project">{$res.project_title}<!--ここにプロジェクト・チケットを表示--></th>
             <th class="ticket"><a href="viewTicket.php?ticket_id={$res.ticket_id}">{$res.title}</a></th>
             <th class="gaiyo">{$res.body}</th>
             </tr>
