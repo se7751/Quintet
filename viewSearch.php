@@ -102,8 +102,6 @@ if(empty($results)){
 
 
 
-
-
 if(empty($_SESSION ['ch_project_title'])){
 	$smarty->assign ( 'ch_project_title', "　　　" );
 	$smarty->assign ( 'ch_project_id', "");
@@ -115,7 +113,6 @@ $smarty->assign ( 'restotal', $restotal[0]['restotal'] );
 $smarty->assign ( 'results', $results );
 $smarty->assign ( 'names', $_SESSION['username'] );
 $smarty->assign ( 'title', "検索" );
-
 
 $smarty->display ( 'view/viewSearch.tpl' );
 ?>

@@ -53,14 +53,22 @@
 	<tbody>
 		{foreach from=$tickets item=ticket}
 		{if ($ticket.ticket_id != "")}
-		{if ($ticket.priority == "至急")}
+		{if ($ticket.priority == "3")}
+		<tr style="background: #F3AD3B;">
+		{elseif $ticket.priority == "2" }
 		<tr style="background: #FFE200;">
 		{else}
 		<tr id="issue-100"  class="tiketo">
 		{/if}
 			<td class="id"><a href="viewTicket.php?ticket_id={$ticket.ticket_id}">{$ticket.ticket_id}</a></td>
 			<td class="status">{$ticket.state}</td>
-			<td class="priority">{$ticket.priority}</td>
+			{if ($ticket.priority == "3")}<td class="priority">緊急</td>
+			{elseif $ticket.priority == "2" }<td class="priority">高</td>
+			{elseif $ticket.priority == "0" }<td class="priority">低</td>
+			{elseif $ticket.priority == "1" }
+			<td class="priority">通常</td>
+			{/if}
+
 			<td class="subject"><a href="viewTicket.php?ticket_id={$ticket.ticket_id}">{$ticket.title}</a></td>
 			{if ($ticket.kijitu != "0000-00-00 00:00:00")}
 			<td class="updated_on">{$ticket.kijitu|date_format:"%Y/%m/%d"}</td>

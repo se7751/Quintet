@@ -61,10 +61,10 @@
 
 						<th>
 							<select name="primary1">
-							<option value="primary1">通常</option>
-							<option value="primary2">低</option>
-							<option value="primary3">高</option>
-							<option value="primary4">至急</option>
+							<option value="primary1">1</option>
+							<option value="primary2">0</option>
+							<option value="primary3">2</option>
+							<option value="primary4">3</option>
 							</select>
 						</th>
 
@@ -97,7 +97,7 @@
 	<tbody>
 		{foreach from=$tickets item=ticket}
 		{if ($ticket.ticket_id != "")}
-		{if ($ticket.priority == "至急")}
+		{if ($ticket.priority == "3")}
 		<tr style="background: red;">
 		{else}
 		<tr id="issue-100"  class="tiketo">

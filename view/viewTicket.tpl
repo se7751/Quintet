@@ -44,14 +44,25 @@
 					<td class="start-date">{$tic.created|date_format:"%Y/%m/%d %H:%M:%S"}</td></tr>
 
 					<th class="priority">優先度:</th>
-					<td class="priority">{$tic.priority}</td>
+					{if ($tic.priority == "3")}<td class="priority">緊急</td>
+					{elseif $tic.priority == "2" }<td class="priority">高</td>
+					{elseif $tic.priority == "0" }<td class="priority">低</td>
+					{elseif $tic.priority == "1" }<td class="priority">通常</td>
+					{/if}
 
 					<th class="due-date">更新日:</th>
+					{if ($tic.modified != "0000-00-00 00:00:00")}
 					<td class="due-date">{$tic.modified|date_format:"%Y/%m/%d %H:%M:%S"}</td></tr>
+					{else}
+					<td class="due-date">　　　　　　　　</td></tr>
+					{/if}
+
 
 					<th class="assigned-to">期日:</th>
 					{if ($tic.kijitu != "0000-00-00 00:00:00")}
 					<td class="assigned-to">{$tic.kijitu|date_format:"%Y/%m/%d"}</td>
+					{else}
+					<td class="assigned-to">　　　　　　　　</td>
 					{/if}
 
 					<th class="a">担当者:</td>
@@ -68,7 +79,7 @@
 					{/foreach}
 				</tr>
 			</table></br>
-	
+
 	<!-- 概要 -->
 			<div id="gaiyo">
 				<h3>概要</h3>
