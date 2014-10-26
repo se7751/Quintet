@@ -68,10 +68,10 @@
 						<th>優先度</th>
 						<td>
 							<select name="priority">
-							<option value="通常">通常</option>
-							<option value="至急">至急</option>
-							<option value="高">高</option>
-							<option value="低">低</option>
+							<option value="1">通常</option>
+							<option value="3">緊急</option>
+							<option value="2">高</option>
+							<option value="0">低</option>
 							</select>
 						</td>
 					</tr>
@@ -140,7 +140,7 @@
                 {/foreach}
             </select>
         </td>
-        
+
    		<script type="text/javascript">
 
    		var element = document.getElementById("selectest");
@@ -172,7 +172,7 @@
 
 
 
-		
+
 <script type="text/javascript">
         $(function() {
         $.datepicker.setDefaults($.datepicker.regional['ja']);

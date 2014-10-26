@@ -5,6 +5,7 @@ require_once ('class/DBManager.php');
 $userId = getUserID ();
 $db = DBManager::instance();
 //使うデータをそろえます。
+date_default_timezone_set('Asia/Tokyo');
 $tantou = $_POST['choose'];
 $ticket_title = $_POST['title'];
 $toukousya_id = $_SESSION['user_id'];

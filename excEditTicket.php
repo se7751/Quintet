@@ -7,8 +7,8 @@ require_once ('class/DBManager.php');
 $userId = getUserID ();
 // DB管理オブジェクトの取得
 $db = DBManager::instance ();
+date_default_timezone_set('Asia/Tokyo');
 echo '<meta charset="utf-8"/>';
-var_dump($_POST);
 $eee = Request::getPost ( 'choose' );
 $sample = explode ( ',', $eee );
 //UPDATEをprojectsに対してかける

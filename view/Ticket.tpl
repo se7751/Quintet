@@ -44,7 +44,7 @@
 					<td class="start-date">2014/08/21</td></tr>
 					
 					<th class="priority">優先度:</th>
-					<td class="priority">通常</td>
+					<td class="priority">1</td>
 					
 					<th class="due-date">更新日:</th>
 					<td class="due-date">2014/08/21</td></tr>

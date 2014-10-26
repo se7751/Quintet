@@ -48,7 +48,7 @@
 						<th>ステータス</th>
 						<td>
 							<select name="state">
-                            <option value="新規">{$tic.state}</option>
+                            <option value="{$tic.state}">{$tic.state}</option>
                             <option value="">-----</option>
 							<option value="新規">新規</option>
 							<option value="作業中">作業中</option>
@@ -59,7 +59,7 @@
 						<th>カテゴリー</th>
 						<td>
 							<select name="category">
-                            <option value="新規">{$tic.category}</option>
+                            <option value="{$tic.category}">{$tic.category}</option>
                             <option value="">-----</option>
 							<option value="要件定義">要件定義</option>
 							<option value="設計">設計</option>
@@ -74,12 +74,21 @@
 						<th>優先度</th>
 						<td>
 							<select name="priority">
-                            <option value="新規">{$tic.priority}</option>
-                            <option value="">-----</option>
-							<option value="通常">通常</option>
-							<option value="至急">至急</option>
-							<option value="高">高</option>
-							<option value="低">低</option>
+							{$tic.priority}
+                            <option value="{if ($tic.priority == "3")}緊急
+			{elseif $tic.priority == "2" }高
+			{elseif $tic.priority == "0" }低
+			{elseif $tic.priority == "1" }通常
+			{/if}">{if ($tic.priority == "3")}緊急
+			{elseif $tic.priority == "2" }高
+			{elseif $tic.priority == "0" }低
+			{elseif $tic.priority == "1" }通常
+			{/if}</option>
+                            <option value=" ">-----</option>
+							<option value="1">通常</option>
+							<option value="3">緊急</option>
+							<option value="2">高</option>
+							<option value="0">低</option>
 							</select>
 						</td>
 					</tr>
@@ -190,7 +199,7 @@
 
 
 
-		
+
 <script type="text/javascript">
         $(function() {
         $.datepicker.setDefaults($.datepicker.regional['ja']);
